@@ -3,12 +3,21 @@
     <next>
       <block type="movement_left" id="44">
         <next>
-          <block type="robot_delay" id="46" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="53">
-                <field name="NUM">3000</field>
+          <block type="controls_repeat" id="90" inline="true">
+            <value name="TIMES">
+              <block type="math_number" id="97">
+                <field name="NUM">2</field>
               </block>
             </value>
+            <statement name="DO">
+              <block type="robot_delay" id="46" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="53">
+                    <field name="NUM">3000</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
             <next>
               <block type="movement_stop" id="64"></block>
             </next>
